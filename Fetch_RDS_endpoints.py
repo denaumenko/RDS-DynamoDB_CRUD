@@ -9,8 +9,8 @@ def date_time_converter(o):
 rds_identifier = 'my-rds-db'
 
 rds_client = boto3.client('rds',
-    aws_access_key_id="*****",
-    aws_secret_access_key="***")
+    aws_access_key_id="****",
+    aws_secret_access_key="*****")
 
 print("Fetching the RDS endpoint...")
 response = rds_client.describe_db_instances(
